@@ -6,7 +6,7 @@
           %p
             = msg
     .field
-      = f.label :name, "Enter a name:"
-      = f.text_field :name
+      = f.label :name, "Enter a name:", class: "hidden"
+      = f.text_field :name, autofocus: 'autofocus', placeholder: "Enter a name"
     .field
-      = f.submit
+      = f.submit ""

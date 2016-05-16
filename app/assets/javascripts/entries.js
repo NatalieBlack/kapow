@@ -3,7 +3,7 @@ $(document).on('ready page:load', function() {
 
   if($('.data')){
     console.log('yes');
-    poll();
+//    poll();
   }
 
   function poll() {
