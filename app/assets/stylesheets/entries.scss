@@ -1,3 +1,112 @@
 // Place all the styles related to the entries controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$blue: #41a6de;
+$light-blue: #84c5ea;
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, html {
+  font-size: 62.5%;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: $blue;
+  font-family: 'Bangers', Helvetica, Arial, sans-serif;
+}
+
+.entry {
+  font-size: 2rem;
+  width: 100%;
+}
+
+.new_entry {
+  position: fixed;
+  top: 50%;
+  left: 50%; 
+  height: 50%; 
+  max-height: 800px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%); 
+  -ms-transform: translate(-50%, -50%); 
+  -o-transform: translate(-50%, -50%); 
+  transform: translate(-50%, -50%); 
+  margin: 0 auto;
+  max-width: 800px;
+  width: 80%;
+
+  label {
+    display: block;
+  }
+
+  input[type="text"]:focus {
+    font-family: 'Bangers', Helvetica, Arial, sans-serif;
+    outline: none;
+    border-bottom: 1px solid white;
+  }
+
+  input[type="text"] {
+    border: none;
+    line-height: 8rem;
+    font-size: 4rem;
+    max-width: 900px;
+    width: 100%;
+    height: 8rem;
+    background: $light-blue;
+    text-align: center;
+  }
+  input[type="submit"] {
+    background: $light-blue image-url('arrow.svg') 50% 50%/70% 70% no-repeat;
+    border-style: none;
+    border-image: none;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+
+  }
+
+  ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: white !important;
+    opacity: 0.7 !important;
+    font-family: 'Bangers', Helvetica, Arial, sans-serif;
+  }
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: white !important;
+    opacity: 0.7 !important;
+    font-family: 'Bangers', Helvetica, Arial, sans-serif;
+  }
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: white !important;
+    opacity: 0.7 !important;
+    font-family: 'Bangers', Helvetica, Arial, sans-serif;
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white !important;
+    opacity: 0.7 !important;
+    font-family: 'Bangers', Helvetica, Arial, sans-serif;
+  }
+
+  .hidden {
+    display: none;
+  }
+}
+
+.field {
+  text-align: center;
+  margin-top: 10px;
+}
+
+p {
+  font-size: 4rem;
+}
+
+.alert, .notice {
+  text-align: center;
+  font-family: 'Bangers', Helvetica, Arial, sans-serif;
+}
