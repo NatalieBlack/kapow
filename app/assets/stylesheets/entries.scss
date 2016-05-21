@@ -46,6 +46,7 @@ body, html {
   }
 
   input[type="text"]:focus {
+    padding: 10px;
     font-family: 'Bangers', Helvetica, Arial, sans-serif;
     outline: none;
     border-bottom: 1px solid white;
@@ -59,7 +60,6 @@ body, html {
     width: 100%;
     height: 8rem;
     background: $light-blue;
-    text-align: center;
   }
   input[type="submit"] {
     background: $light-blue image-url('arrow.svg') 50% 50%/70% 70% no-repeat;
@@ -72,21 +72,25 @@ body, html {
   }
 
   ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    text-align: center;
     color: white !important;
     opacity: 0.7 !important;
     font-family: 'Bangers', Helvetica, Arial, sans-serif;
   }
   :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    text-align: center;
     color: white !important;
     opacity: 0.7 !important;
     font-family: 'Bangers', Helvetica, Arial, sans-serif;
   }
   ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    text-align: center;
     color: white !important;
     opacity: 0.7 !important;
     font-family: 'Bangers', Helvetica, Arial, sans-serif;
   }
   :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    text-align: center;
     color: white !important;
     opacity: 0.7 !important;
     font-family: 'Bangers', Helvetica, Arial, sans-serif;
@@ -97,9 +101,9 @@ body, html {
   }
 }
 
-.field {
-  text-align: center;
+.submit {
   margin-top: 10px;
+  text-align: center;
 }
 
 p {
