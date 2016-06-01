@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'pages/about'
+
   root 'entries#new'
   
   resources :entries, only: [:index, :new, :create]

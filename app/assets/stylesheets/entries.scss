@@ -21,25 +21,44 @@ body, html {
   font-family: 'Bangers', Helvetica, Arial, sans-serif;
 }
 
-.entry {
-  font-size: 2rem;
-  width: 100%;
+
+
+.messages {
+  margin: 1rem;
+  @media (min-height:350px) {
+    margin: 10vh;
+  }
+  line-height: 4rem;
+  height: 4rem;
 }
 
-.new_entry {
+.entry {
+  font-size: 2rem;
   position: fixed;
-  top: 50%;
   left: 50%; 
-  height: 50%; 
-  max-height: 800px;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%); 
-  -ms-transform: translate(-50%, -50%); 
-  -o-transform: translate(-50%, -50%); 
-  transform: translate(-50%, -50%); 
+  -webkit-transform: translate(-50%, 0%);
+  -moz-transform: translate(-50%, 0%); 
+  -ms-transform: translate(-50%, 0%); 
+  -o-transform: translate(-50%, 0%); 
+  transform: translate(-50%, 0%); 
   margin: 0 auto;
   max-width: 800px;
   width: 80%;
+}
+
+.about_footer {
+  padding: 5px;
+}
+
+.about {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.new_entry {
+  height: 50%; 
+  max-height: 800px;
 
   label {
     display: block;
@@ -107,10 +126,18 @@ body, html {
 }
 
 p {
-  font-size: 4rem;
+  font-family: 'Cardo', serif;
+  font-size: 2.3rem;
+
+  @media (min-height:350px) {
+    font-size: 2.2rem;
+  }
+
 }
 
 .alert, .notice {
+  font-size: 4rem;
   text-align: center;
+  margin: 0px;
   font-family: 'Bangers', Helvetica, Arial, sans-serif;
 }
