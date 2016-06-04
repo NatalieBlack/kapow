@@ -11,9 +11,16 @@
   <body>
 
 
-      <%= yield %>
+      <main class="yield">
+        <%= yield %>
 
-
+      <footer>
+        <p>
+          <%= link_to 'About', pages_about_path %>
+          <%= link_to 'Interact', new_entry_path %>
+        </p>
+      </footer>
+      </main>
 
 
   </body>

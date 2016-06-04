@@ -6,7 +6,7 @@
     %p.alert
       = flash[:alert]
 
-%main{class: 'entry'}
+%section{class: 'entry'}
   = form_for @entry do |f|
     - if @entry.errors.any?
       .errors
@@ -18,8 +18,3 @@
       = f.text_field :name, autofocus: 'autofocus', placeholder: "Enter a name"
     .submit
       = f.submit ""
-
-  %footer
-    %p
-      = link_to 'About', pages_about_path 
-      = link_to 'Interact', new_entry_path 
