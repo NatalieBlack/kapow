@@ -13,10 +13,17 @@ class EntriesController < ApplicationController
   end
 
   def index
-    dt = params[:from].blank? ? Entry.first.created_at - 1.day : Entry.find(params[:from].to_i).created_at
     respond_to do |f|
-      f.html {}
-      f.json { render json: Entry.where('created_at > ?', dt).to_json }
+
+      f.html do
+        @entries = Entry.all 
+      end
+
+      f.json do
+        dt = params[:from].blank? ? Entry.first.created_at - 1.day : Entry.find(params[:from].to_i).created_at
+        render json: Entry.where('created_at > ?', dt).to_json 
+      end
+
     end
   end
 

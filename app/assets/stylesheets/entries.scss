@@ -34,6 +34,11 @@ body, html {
   height: 4rem;
 }
 
+.names {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
 .entry {
   font-size: 2rem;
   margin: auto auto;
@@ -124,19 +129,10 @@ footer {
   text-align: center;
 }
 
-p {
-  font-family: 'Cardo', serif;
-  font-size: 2.3rem;
-
-  @media (min-height:350px) {
-    font-size: 2.2rem;
-  }
-
-}
-
 .alert, .notice {
   font-size: 4rem;
   text-align: center;
   margin: 0px;
   font-family: 'Bangers', Helvetica, Arial, sans-serif;
 }
+
