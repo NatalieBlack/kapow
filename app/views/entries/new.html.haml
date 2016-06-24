@@ -17,4 +17,9 @@
       = f.label :name, "Enter a name:", class: "hidden"
       = f.text_field :name, autofocus: 'autofocus', placeholder: "Enter a name"
     .submit
-      = f.submit ""
+      = f.submit "Submit"
+
+.random
+  %p
+    Or
+  = link_to "Replay a random name", random_path, class: "stylish_button"

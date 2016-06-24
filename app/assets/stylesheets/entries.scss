@@ -85,6 +85,15 @@ footer {
     background: $light-blue;
   }
   input[type="submit"] {
+    background: $light-blue;
+    border-style: none;
+    border-image: none;
+    font-family: 'Bangers', 'Helvetica';
+    color: white;
+    font-size: 3rem;
+    padding: 10px;
+  }
+  /*input[type="submit"] {
     background: $light-blue image-url('arrow.svg') 50% 50%/70% 70% no-repeat;
     border-style: none;
     border-image: none;
@@ -92,7 +101,7 @@ footer {
     width: 4rem;
     border-radius: 50%;
 
-  }
+  }*/
 
   ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     text-align: center;
@@ -136,3 +145,19 @@ footer {
   font-family: 'Bangers', Helvetica, Arial, sans-serif;
 }
 
+.random {
+  margin: 20px 0px;
+  text-align: center;
+  color: white;
+  p {
+    font-family: 'Bangers';
+  }
+}
+
+.stylish_button {
+  padding: 10px;
+  background: $light-blue;
+  color: white;
+  font-family: 'Bangers', 'Helvetica';
+  font-size: 3.25rem;
+}

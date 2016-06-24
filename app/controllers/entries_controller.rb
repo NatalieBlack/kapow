@@ -27,6 +27,11 @@ class EntriesController < ApplicationController
     end
   end
 
+  def random
+    Entry.resend_random
+    redirect_to new_entry_url
+  end
+
 private
   def entry_params
     params.require(:entry).permit(:name)

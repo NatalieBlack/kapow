@@ -26,4 +26,10 @@ class Entry < ActiveRecord::Base
     Entry.pubnub_client.publish(channel: Entry.pubnub_channel, message: name)
   end
 
+  def self.resend_random
+    offset = rand(Entry.count)
+    name = Entry.offset(offset).limit(1).name
+    pubnub_client.publish(channel: Entry.pubnub_channel, message: name)
+  end
+
 end
